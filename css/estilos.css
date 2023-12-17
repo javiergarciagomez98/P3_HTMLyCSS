@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Serif:wght@600&display=swap');
+
+:root {
+    --main-text-color: rgb(0, 59, 74);
+    --grey-text-color: rgb(158, 157, 171);
+    --light-text-color: rgb(255, 255, 255);
+    --contrast-color: rgb(191, 12, 240);
+    --light-contrast-color: rgb(229, 225, 254);
+    --background-color: rgb(247, 247, 247);
+
+    --regular-weight-lato: 400;  
+    --bold-weight-lato: 700;  
+    --black-weight-lato: 900;
+    
+    --semibold-weight-noto: 600;
+}
+
+html {
+    font-family: 'Noto Serif', serif;
+}
+
+body {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--background-color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    font-family: 'Lato', sans-serif;
+    font-weight: var(--bold-weight-lato);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Header*/
+.header__icon {
+    margin: 20px;
+}
+
+.nav__links-container {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.nav__links-container li:first-child {
+    border-right: 1px solid var(--main-text-color);
+}
+
+.nav__links {
+    margin: 20px;
+
+    text-transform: uppercase;
+    color: var(--main-text-color);
+}
+
+.nav__links:hover {
+    color: var(--contrast-color);
+
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+
+/*Footer*/
+
+
+/*Index page*/
+
+/*Blog page*/
+
+/*Entrada page*/
+
+/*Videos page*/
