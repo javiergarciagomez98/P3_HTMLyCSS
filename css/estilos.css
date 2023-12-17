@@ -16,7 +16,8 @@
 }
 
 html {
-    font-family: 'Noto Serif', serif;
+    /* font-family: 'Noto Serif', serif; */
+    font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -36,7 +37,6 @@ main {
 }
 
 header {
-    font-family: 'Lato', sans-serif;
     font-weight: var(--bold-weight-lato);
 
     display: flex;
@@ -88,9 +88,36 @@ a {
 }
 
 /*Footer*/
+footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--main-text-color);
+}
 
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__info p {
+    color: var(--light-text-color);
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__media-container {
+    display: flex;
+}
 
 /*Index page*/
+
 
 /*Blog page*/
 
