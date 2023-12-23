@@ -101,6 +101,11 @@ footer {
     align-items: center;
 }
 
+.footer__info img {
+    margin: 2rem 0 0.25rem 0;
+    width: 100px;
+}
+
 .footer__info p {
     color: var(--light-text-color);
 }
@@ -116,6 +121,41 @@ footer {
     display: flex;
 }
 
+.footer__media-links {
+    opacity: 1;
+}
+
+.footer__media-links:hover {
+    opacity: 0.5;
+    -webkit-transition: 0.25s ease;
+    -moz-transition: 0.25s ease;
+    -o-transition: 0.25s ease;
+    transition: 0.25s ease;
+}
+
+.footer__legal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem 0 3rem 0;
+}
+
+.footer__legal-container li {
+    margin: 0.2rem 0;
+}
+
+.footer__legal-links {
+    color: var(--light-text-color);
+    -webkit-transition: 0.25s ease;
+    -moz-transition: 0.25s ease;
+    -o-transition: 0.25s ease;
+    transition: 0.25s ease;
+}
+
+.footer__legal-links:hover {
+    color: var(--light-contrast-color);
+}
 /*Index page*/
 
 
