@@ -60,6 +60,32 @@ a {
     text-decoration: none;
 }
 
+h1, h2, p, figcaption, label {
+    color: var(--main-text-color);
+}
+
+button,
+input[type="submit"] {
+    padding: 0.5rem;
+    text-transform: uppercase;
+    color: var(--light-text-color);
+    background-color: var(--main-text-color);
+
+    border: none;
+    border-radius: 3px;
+
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: var(--contrast-color);
+}
+
 /*Header*/
 .header__icon {
     margin: 20px;
@@ -215,10 +241,6 @@ footer {
     margin: 3rem 1rem;
 }
 
-.index__newsletter-container p, h1, label {
-    color: var(--main-text-color);
-}
-
 .index__newsletter-title {
     font-family: var(--font-family-noto);
     font-size: 2rem;
@@ -273,25 +295,53 @@ footer {
     margin: 1.5rem 0;
 }
 
-.index__newsletter-form_button input {
-    padding: 0.5rem;
-    text-transform: uppercase;
-    background-color: var(--main-text-color);
-    color: var(--light-text-color);
-
-    border: none;
-    border-radius: 3px;
-
-    -webkit-transition: 0.25s ease;
-    -moz-transition: 0.25s ease;
-    -o-transition: 0.25s ease;
-    transition: 0.25s ease;
+.index__recomendations-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding-bottom: 5rem;
+    background-color: var(--light-contrast-color);
 }
 
-.index__newsletter-form_button input:hover {
-    cursor: pointer;
-    background-color: var(--contrast-color);
+.index__recomendations {
+    margin: 3rem 1rem 0 1rem;
 }
+
+.index__recomendations-figure {
+    margin: 0;
+    padding: 0;
+}
+
+.index__recomendations-img {
+    width: 100%;
+}
+
+.index__recomendations-figure figcaption {
+    font-size: 0.6rem;
+    text-align: end;
+}
+
+.index__recomendations-title {
+    margin: 0;
+    font-size: 1.32rem;
+    font-family: var(--font-family-noto);
+}
+
+.index__recomendations-description {
+    margin: 1.75rem 0;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
 
 /*Blog page*/
 
