@@ -33,9 +33,11 @@ body {
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -185,7 +187,25 @@ footer {
 
 /*Index page*/
 .index__hero-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 
+.index__hero-img {
+    width: 860px;
+}
+
+.index__hero-title {
+    position: absolute;
+    margin: 0 1rem;
+    font-size: 2.7rem;
+    font-weight: var(--extra-bold-weight-lato);
 }
 
 .index__newsletter-container {
