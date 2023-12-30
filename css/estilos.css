@@ -606,6 +606,23 @@ footer {
         margin: 3rem 1rem;
         max-width: 1000px;
     }
+
+    /* Blog page */
+    .blog__content-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, auto);
+        margin: 3rem 1rem;
+        gap: 40px;
+    }
+
+    .blog__title {
+        grid-column: span 2;
+    }
+
+    .blog__pager-container {
+        grid-column: span 2;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -639,6 +656,14 @@ footer {
         grid-template-rows: repeat(9, auto);
         margin: 3rem 1rem;
         gap: 20px;
+    }
+
+    .blog__title {
+        grid-column: span 1;
+    }
+
+    .blog__pager-container {
+        grid-column: span 1;
     }
 }
 
